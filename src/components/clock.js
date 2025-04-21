@@ -23,10 +23,10 @@ const Stopwatch = () => {
   };
 
   return (
-    <div style={{ textAlign: 'center', padding: '2rem' }}>
+    <div className="stopwatch-container">
       <h1>Stopwatch</h1>
       <h2>{formatTime(seconds)}</h2>
-      <div>
+      <div className="button-group">
         <button onClick={() => setIsRunning(true)} disabled={isRunning}>Start</button>
         <button onClick={() => setIsRunning(false)} disabled={!isRunning}>Stop</button>
         <button onClick={() => { setIsRunning(false); setSeconds(0); }}>Reset</button>
