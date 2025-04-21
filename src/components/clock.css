@@ -23,4 +23,7 @@
     border: none;
     border-radius: 6px;
     cursor: pointer;
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s ease;
   }
